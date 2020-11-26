@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-end container-sm m-3">
+            <a href="#"><img src="img/icon_home.jpg" alt="home" id="home" title="home"
+                    onmouseover="changeIcon('home','icon_home1')" onmouseout="changeIcon('home', 'icon_home')"></a>
+            <a href="#" class="mx-3"><img src="img/icon_contact.jpg" alt="contact" id="contact"
+                    onmouseover="changeIcon('contact','icon_contact1')"
+                    onmouseout="changeIcon('contact', 'icon_contact')"></a>
+            <a href="#" class="mr-3"><img src="img/icon_facebook.jpg" alt="facebook" id="facebook"
+                    onmouseover="changeIcon('facebook','icon_facebook1')"
+                    onmouseout="changeIcon('facebook', 'icon_facebook')"></a>
+        </div>
+
+        <div class="header py-2">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap align-items-center img-div">
+                    <div class="px-3 mt-2">
+                        <img src="img/logo.jpg" class="logo img-fluid" alt="logo">
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                        <div>
+                            <a href="#"> <img src="img/donate.jpg" alt="donate" title="Donate Now"
+                                    class="img-fluid"></a>
+                        </div>
+                        <div>
+                            <img src="img/title.jpg" class="title img-fluid" alt="title"
+                                title="Legal Education Awareness Foundation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bg">
+            <nav class="navbar navbar-expand-lg navbar-light container p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Future visions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join Us?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center my-4" style="color: #F15B28;">CONTACT US</h1>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h5 style="color: #F15B28;">Write us at</h5>
+                <p>
+                    D-13/11, Khanpur Extn. <br> New Delhi - 110080 <br> Contact : +91-8373994601 ;+91-9868629764
+                    <br>Emails :
+                    mail@leaftoday.com, info@leaftoday.com
+                </p>
+            </div>
+            <img src="img/contact.jpg" class="img-fluid" alt="contact">
+        </div>
+        <div class="contact-form">
+            <p style="font-size: 22px;">Share a word! All marked as ( <span style="color: #F15B28;">*</span> ) are
+                required</p>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name <span style="color: #F15B28;">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email ID <span style="color: #F15B28;">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Contact No. <span style="color: #F15B28;">*</span></label>
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                        onkeypress="return isNumberKey(event)">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="custom-btn">Submit</button>
+                    <button type="submit" class="custom-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center profiles">
+            <div class="profile-card">
+                <img src="img/aditya_dhawan_s.jpg" alt="">
+                <p>Mr. Aditya Dhawan</p>
+                <small>aditya@leaftoday.com</small>
+            </div>
+            <div class="profile-card">
+                <img src="img/tanya_tikiya_s.jpg" alt="">
+                <p>Ms. Tanya Tikiya</p>
+                <small>tanyatikiya@leaftoday.com</small>
+            </div>
+            <div class="profile-card">
+                <img src="img/gayatri_s.jpg" alt="">
+                <p>Ms. Gayatri</p>
+                <small>gayatri@leaftoday.com</small>
+            </div>
+            <div class="profile-card">
+                <img src="img/rajeev_s.jpg" alt="">
+                <p>Mr. Rajeev</p>
+                <small>rajeevkukkal@leaftoday.com</small>
+            </div>
+            <div class="profile-card">
+                <img src="img/sooraj_dewan_s.jpg" alt="">
+                <p>Mr. Sooraj Dewan</p>
+                <small>soorajdewan@leaftoday.com</small>
+            </div>
+        </div>
+        <div class="frame">
+            <iframe src="https://www.google.co.in/" frameborder="0"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <a href="#">Terms & condition</a> | <a href="#">Privacy Policy</a>
+                | Copyright 2020 | All rights reserved | Powered by <a href="#">Quest2Net</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        function changeIcon(item, icon) {
+            document.getElementById(item).setAttribute("src", `img/${icon}.jpg`)
+        }
+
+        function isNumberKey(event) {
+            var charCode = (event.which) ? event.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
+            return true;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
