@@ -74,7 +74,7 @@
     color: gray
 }
 
-.profiles {
+.gallery {
     margin: 20px 0;
     border: 1px solid #F15B28;
     border-radius: 3px;
@@ -113,4 +113,13 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: black;
+}
+
+.custom-btn:hover {
+    background-color: #063053;
+}
+
+.holder {
+    width: 200px;
+    height: 300px;
 }
